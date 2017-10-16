@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/maxnelso/bundle'
+let g:netrw_dirhist_2='/usr/local/opt/ffmpeg'
+let g:netrw_dirhist_3='/Users/maxnelso/wx'
+let g:netrw_dirhist_4='/Users/maxnelso/projects/battlecode2016/battlecodematchserver/archon'
+let g:netrw_dirhist_5='/Users/maxnelso/projects/battlecode2016/battlecodematchserver/go/pkg/darwin_amd64/github.com'
+let g:netrw_dirhist_6='/Users/maxnelso/projects/battlecode2016/battlecode/src/infestorbot2'
+let g:netrw_dirhist_7='/Users/maxnelso/projects/battlecode-2017'
