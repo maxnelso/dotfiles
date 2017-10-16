@@ -30,12 +30,13 @@ set colorcolumn=+1
 set listchars=tab:>-,trail:-
 set list
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/bundle/YouCompleteMe/plugin/youcompleteme.vim
 set wildignore+=*/build/*,*.so,*.swp,*.zip
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 set clipboard=unnamed
-map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+"map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 map , "+
 autocmd BufRead *.as set filetype=actionscript
 
@@ -48,24 +49,24 @@ endif
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
-"Bundle 'scrooloose/syntastic'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tikhomirov/vim-glsl'
-"Bundle 'oblitum/rainbow'
+"Plugin 'scrooloose/syntastic'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tikhomirov/vim-glsl'
+"Plugin 'oblitum/rainbow'
 " Track the engine.
-Bundle 'SirVer/ultisnips'
-Bundle 'pfdevilliers/Pretty-Vim-Python'
+Plugin 'SirVer/ultisnips'
+Plugin 'pfdevilliers/Pretty-Vim-Python'
 "
 " " Snippets are separated from the engine. Add this if you want them:
-Bundle 'honza/vim-snippets'
+Plugin 'honza/vim-snippets'
 "
 " " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
@@ -75,6 +76,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " " If you want :UltiSnipsEdit to split your window.
 "let g:UltiSnipsEditSplit="vertical"
+call vundle#end()
 filetype plugin indent on
 :filetype plugin on
 
